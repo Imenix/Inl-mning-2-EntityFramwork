@@ -1,2 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+//Skapa instansering och körning av meny
+
+using Inlämning_2_EntityFramwork;
+
+Menu menu = new();
+menu.startMenu();

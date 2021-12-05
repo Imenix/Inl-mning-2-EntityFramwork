@@ -1,19 +1,26 @@
-﻿namespace Inlämning_2_EntityFramwork.Utils
-    public class ContentCreator
+﻿namespace Inlämning_2_EntityFramwork.Utils;
+public class ContentCreator
+{
+
+    public void ContentCreation()
     {
-        public void ContentCreation()
+
+        using (var db = new DBClass())
         {
-            
-            using (var db = new DBClass())
-            {
-            db.People.Add(new Models.Person
-            {
-
+            db.People.Add(new Models.Person()
+            {   
+                /*Id = 2*/
+                Name = "Tommy",
+                LastName = "Shelby",
+                BirthYear = 1892,
+                DeathYear = 1946,
+                Father = "Bla",
+                Mother = "Bleh",
             });
-
-            }
+            db.SaveChanges();
         }
-
-      
     }
 }
+
+      
+    

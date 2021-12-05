@@ -6,6 +6,8 @@ namespace Inlämning_2_EntityFramwork;
 public class DBClass : DbContext
 {
     private const string DatabaseName = "MHGenealogi";
+    
+    public DBClass() { }
 
     public DbSet<Person> People { get; set; }
 
@@ -15,9 +17,3 @@ public class DBClass : DbContext
     }
 }
 
-//public static class InitializeDatabase
-//{
-//    public static void Seed()
-//    {
-//    }
-//}

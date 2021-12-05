@@ -14,6 +14,13 @@ namespace Inlämning_2_EntityFramwork
             Console.WriteLine("Välkommen! ");
 
             Console.WriteLine("Vad vill du göra?");
+            Console.WriteLine("1. Lägga till en karaktär");
+            Console.WriteLine("2. Uppdatera en karaktär");
+            Console.WriteLine("3. Ta bort en karaktär");
+            Console.WriteLine("4. Lista alla karaktärer");
+            Console.WriteLine("Vad vill du göra");
+            Console.WriteLine("Vad vill du göra?");
+
 
             string userInput = Console.ReadLine();
             int.TryParse(userInput, out int caseDecide);
@@ -25,12 +32,15 @@ namespace Inlämning_2_EntityFramwork
                     break;
 
                 case 2:
+                    UpdateCharacter();
                     break;
 
                 case 3:
+                    RemoveCharacter();
                     break;
 
                 case 4:
+                    ShowCharacters();
                     break;
 
                 case 5:

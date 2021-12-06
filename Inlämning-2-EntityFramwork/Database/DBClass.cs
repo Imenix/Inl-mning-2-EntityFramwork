@@ -9,9 +9,13 @@ public class DBClass : DbContext
     
     public DBClass() { }
 
-    public DbSet<Person> People { get; set; }
+    public DbSet<Person> People { get; set; } // skapar tabellen i databasen
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+
+   
+
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) // skapar koppling till databasen.
     {
         optionsBuilder.UseSqlServer($@"Server=(localdb)\mssqllocaldb;Database={DatabaseName};Trusted_Connection=True;");
     }

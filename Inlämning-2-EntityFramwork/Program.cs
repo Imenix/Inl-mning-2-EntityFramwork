@@ -3,5 +3,5 @@
 
 using Inlämning_2_EntityFramwork;
 
-Menu menu = new();
-menu.startMenu();
+Menu menu = new(); 
+menu.startMenu(); //instanserar menyn

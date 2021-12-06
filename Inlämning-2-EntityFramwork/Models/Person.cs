@@ -2,7 +2,7 @@
 
 namespace Inlämning_2_EntityFramwork.Models
 {
-    public class Person
+    public class Person //Propertyclass för People-listan
     {
         [Key]
         public int Id { get; set; }
@@ -10,7 +10,7 @@ namespace Inlämning_2_EntityFramwork.Models
         public string? LastName { get; set; }
         public int? BirthYear { get; set; }
         public int? DeathYear { get; set; }
-        public string? Father { get; set; }
-        public string? Mother { get; set; }
+        public int? Father { get; set; }
+        public int? Mother { get; set; }
     }
 }
